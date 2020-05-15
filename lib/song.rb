@@ -37,7 +37,10 @@ class Song
   end 
   
   def self.alphabetical 
-   self.all.sort_by {|song| song.name}           #self.all returns all songs
+  # self.all.sort_by {|song| song.name}
+   #self.all returns all songs
+   #sort_by iterates over each song and returns new array in alphabetical order
+   self.all.sort_by(&:name)
   end 
   
 end
