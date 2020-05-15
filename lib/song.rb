@@ -59,6 +59,10 @@ class Song
    song
   end 
   
+  def self.destroy_all
+   
+  end 
+  
 end
 
 # %w{apple pear fig} == [apple, pear, fig]
