@@ -37,9 +37,10 @@ class Song
   end 
   
   def self.alphabetical 
-   
+   self.all.sort_by {|song| song.name}           #self.all returns all songs
   end 
   
 end
 
 # %w{apple pear fig} == [apple, pear, fig]
+#^ another way to write an array
