@@ -40,7 +40,12 @@ class Song
   # self.all.sort_by {|song| song.name}
    #self.all returns all songs
    #sort_by iterates over each song and returns new array in alphabetical order
-   self.all.sort_by(&:name)
+   self.all.sort_by(&:name)   ### &: iterates each song in array with variable proveded
+  end 
+  
+  def self.new_from_filename(filename)
+   song = self.new 
+   split_filename = filename.
   end 
   
 end
