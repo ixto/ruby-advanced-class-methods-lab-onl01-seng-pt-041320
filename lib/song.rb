@@ -51,6 +51,14 @@ class Song
    song
   end 
   
+  def self.create_from_filename(filename)
+   song = self.create
+   split_filename = filename.chomp(".mp3").split(" - ")
+   song.name = split_filename[1]
+   song.artist_name = split_filename[0]
+   song
+  end 
+  
 end
 
 # %w{apple pear fig} == [apple, pear, fig]
